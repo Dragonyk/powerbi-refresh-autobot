@@ -101,7 +101,7 @@ def refresh_pbix(filepath):
 
     time.sleep(5)
 
-print('PowerBi Autobot by Carlos L.S. Machado')
+print('PowerBi Autobot by Dragonyk')
 ulog.write_info('PowerBi Automation bot started.')
 
 def execute_scripts():
