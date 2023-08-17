@@ -1,0 +1,45 @@
+---
+# Configuracoes de Tempo
+# cycle_timer (true = ciclo a cada X tempo; false = hora especifica)
+# specified_time (se cycle_timer = false; exemplo: 12:00)
+# timer (min = minutos; hour = horas)
+# each_time (executa a cada X tempo)
+time_settings:
+  cycle_timer: false
+  specified_time: '08:20'
+  timer: hour
+  each_time: 15
+
+# Configuracoes de Email
+# email_sender (remetente)
+# email_password (senha do remetente)
+# email_targets (lista de encaminhamento)
+# smtp_server (servidor smtp)
+# smtp_port (porta do servidor smtp)
+email_settings:
+  email_sender: example@gmail.com
+  email_password: PASSWORD
+  email_targets:
+  - example@gmail.com
+
+# email_name (nome de exibicao do remetente)
+# email_subject (resumo do email)
+# email_content_header (texto de cabecalho do conteudo do email)
+# email_content_body (texto descritivo no conteudo do email obs. pode ser vazio)
+  email_name: Autobot
+  email_subject: Test Subject
+  email_content_header: Test Header Content
+  email_content_body: Test Header Body
+
+  smtp_server: smtp.gmail.com
+  smtp_port: 587
+
+# Opcoes de Definicao
+# send_email (enviar email caso ocorra erro)
+options:
+  send_email: true
+
+# Lista de Arquivos PowerBi PBIX
+file_list:
+- base01.pbix
+- base02.pbix
